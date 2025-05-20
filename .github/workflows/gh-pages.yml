@@ -65,7 +65,7 @@ jobs:
           version_mask: "1.1.1.1"
           version_overwrite: "${{ steps.version.outputs.major-version }}.${{ steps.version.outputs.minor-version }}.${{ steps.version.outputs.patch-version }}.0" 
     - name: .NET Workload Restore
-      run: dotnet workload restore
+      run: dotnet workload restore --project ./src/MegaSchool1/Megaschool1.csproj
     - name: Publish with dotnet
       run: dotnet publish ./src --configuration Release --output build
     - name: Deploy to Github Pages
