@@ -42,6 +42,7 @@
       /en/TrustMyAssets/MS1/KodakHussle/0;
     </BlazorWasmPrerenderingUrlPathToExplicitFetch>
     <GHPages>true</GHPages>
+    <WasmNativeStrip>false</WasmNativeStrip>
   </PropertyGroup>
 
 
